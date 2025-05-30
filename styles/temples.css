@@ -73,13 +73,13 @@ nav {
 	background-color: var(--dark-green);
 }
 
-nav ul {
+nav div {
 	list-style: none;
 	display: none;
 	flex-direction: column;
 }
 
-nav.open ul {
+nav.open div {
     display: flex;
 }
 
