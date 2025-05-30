@@ -1,0 +1,117 @@
+:root {
+    --off-white:#FFFFFA;
+    --dark-green:#0D5C63;
+    --lighter-green: #44A1A0;
+}
+
+*{
+    margin: 0;
+	padding: 0;
+    font-family: Roboto;
+}
+
+img {
+    width: 50vw;
+    height: auto;
+    max-width: 500px;
+
+}
+
+/* mobile **************************/
+header {
+	background-color: var(--off-white);
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
+header{
+    margin:0;
+}
+/* hamburguer stuff */
+.open a {
+    display: block;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖️";
+}
+
+
+main {
+    display: flex;
+	max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+	font-size: 2rem;
+}
+main h1{
+    font-size: 1.5rem;
+    margin: 30px
+}
+
+nav {
+	background-color: var(--dark-green);
+}
+
+nav ul {
+	list-style: none;
+	display: none;
+	flex-direction: column;
+}
+
+nav.open ul {
+    display: flex;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+	background-color: var(--lighter-green);
+	color: var(--off-white);
+}
+
+
+.container {
+    display:grid; 
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 1rem;                
+    padding: 2rem 1rem;            
+    flex-wrap: wrap;
+}
