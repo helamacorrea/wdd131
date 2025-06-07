@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Page about Tokyo">
+    <meta name="author" content="Helamã Verardo Petri Corrêa">
+    <title>About Tokyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+  </head>
+  <body>
+    <header>
+      <h1>Tokyo</h1>
+    </header>
+    <main>
+
+      <div class="hero">
+      <picture>
+          <source srcset="images/tokyo-desktop.webp" media="(min-width: 700px)">
+          <img src="images/tokyo-phone.webp" alt="City of Tokyo" width="700" height="1050">
+      </picture>
+      </div>
+
+      <div class="data">
+        <h2>Data</h2>
+      <p>
+        Area: 2,194 sq km <br>
+        Population: 13,960,236 <br>
+        Languages: Japanese <br>
+        Currency: Japanese Yen (JPY) <br>
+        Time Zone: UTC+9 <br>
+        Calling Code: +81 <br>
+        Internet TLD: .jp
+      </p>
+      </div>
+
+      <div class="weather">
+        <h2>Weather</h2>
+          <div class="weather-icon">
+            <img class="svg-icon" src="images/weather-icon.svg" alt="Weather Icon" width="90">
+          </div>
+        <p>
+          Temperature: 10 °C <br>
+          Conditions: Mostly Sunny <br>
+          Wind: 12 km/h <br>
+          Wind Chill: <span id="wind-chill"></span> <br>
+          Humidity: 68%
+        </p>
+      </div>
+
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> Helamã Verardo Petri Corrêa, SC/Brazil
+        </p>
+        <p id="last-modified"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </body>
+</html>

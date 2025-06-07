@@ -1,0 +1,106 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #96FEFF;
+}
+
+*{
+    margin: 0;
+    font-family: Roboto;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-bottom: 1rem solid var(--secondary-color);
+    padding: 2rem;
+    font-size: 40px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid var(--secondary-color);
+}
+/* ⛅ */
+.emoji-icon {
+    display:none;
+}
+.svg-icon {
+    display:block;
+}
+
+/* parte de estilo mobile */
+.data {
+    text-align:center;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.data h2 {
+    padding: 1rem;
+}
+.weather {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+.weather h2 {
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+    border-top: 1rem solid var(--secondary-color);
+}
+
+p{
+    color: #ffffff;
+}
+
+@media (min-width: 700px) {
+
+    /* ⛅ */
+    .emoji-icon {
+        display: block;
+    } 
+    .svg-icon {
+        display: none;
+    }
+
+    .data {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: none;
+    }
+    .weather {
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .weather h2::after {
+        content: "⛅"
+    }
+
+    main {
+        position: relative;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+}
