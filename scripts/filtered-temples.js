@@ -175,9 +175,9 @@ function displayTemplesArray(array) {
 // At the bottom of your script:
 document.addEventListener('DOMContentLoaded', function() {
     // Check if this is the homepage
-    if (window.location.pathname === '/' || 
-        window.location.pathname === '/index.html'||
-        window.location.pathname === '/filtered-temples.html') {
+    if (window.location.pathname.endsWith('/') || 
+        window.location.pathname.endsWith('/index.html') ||
+        window.location.pathname.endsWith('/filtered-temples.html')) {
         displayAllTemples();
     }
 });
