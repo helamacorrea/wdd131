@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Activity for WDD131. A responsive page with temple pictures">
+    <meta name="author" content="Helamã Verardo Petri Corrêa">
+    <title>Temples Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  </head>
+  <body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav class="navigation">
+          <div>  
+            <a id="home">Home</a>
+            <a id="old">Old</a>
+            <a id="new">New</a>
+            <a id="large">Large</a>
+            <a id="small">Small</a>
+          </div>
+        </nav>
+        <button type="button" id="menu">menu</button>
+    </header>
+    <main>
+            <span class="temples" id="filtered-temples"></span>                     
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> Helamã Verardo Petri Corrêa, SC/Brazil
+        </p>
+        <p id="last-modified"></p>
+    </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </body>
+</html>
+
+

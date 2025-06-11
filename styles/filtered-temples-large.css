@@ -1,0 +1,41 @@
+/* Larger Views ******************************/
+@media (min-width: 650px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav div {
+        display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+
+    .temples {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+		flex-direction: row;
+    }
+	.temple {
+		font-size: small;
+		width: 200px;
+	}
+	.temple img {
+		width: 200px;
+		height:auto;
+	}
+
+    img {
+        width: 50vw;
+        height: auto;
+        max-width: 250px;
+    }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+}

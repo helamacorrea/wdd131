@@ -1,0 +1,35 @@
+thead {
+    background-color: black;
+    color: white;
+}
+
+.col-1 {
+    font-weight: bold;
+}
+
+.plans {
+    background-color: gray;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+
+table {
+    margin:10px auto; 
+    border: thin solid black;
+    box-shadow: 0 0 10px black;
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 7px 15px;
+    border: 1px solid black;
+    text-align: center;
+}
