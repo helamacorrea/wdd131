@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Assignment about forms">
+    <meta name="author" content="Helamã Verardo Petri Corrêa">
+    <title>Relevant Document Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+  </head>
+  <body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="frm">
+            <label class="title"><h2>Product Name</h2><span class="required"> *</span></h2>
+                <select id="productId" name="product" required>
+                    <option value="" disabled selected>Select a Product</option>
+                    <span id="options"></span>
+                </select>
+            </label>
+
+            <div class="title"><h2>Overall Rating</h2><span class="required"> *</span></h2></div>
+            <label><input type="radio" name="evaluation" id="one" required>⭐</label>
+            <label><input type="radio" name="evaluation" id="two" required>⭐⭐</label>
+            <label><input type="radio" name="evaluation" id="three" required>⭐⭐⭐</label>
+            <label><input type="radio" name="evaluation" id="four" required>⭐⭐⭐⭐</label>
+            <label><input type="radio" name="evaluation" id="five" required>⭐⭐⭐⭐⭐</label>
+            
+            <label class="title">
+                <h2>Date of Installation</h2><span class="required"> *</span></h2> 
+                <input type="date" name="installDate" id="installDate" required>
+            </label>
+
+            <div class="title"><h2>Which features did you find useful in the product?</h2><br><span class="optional">(Check all that apply)</span></div>
+            <label><input type="checkbox" name="durability" value="yes" id="durability" >Durability</label>
+            <label><input type="checkbox" name="easeUse" value="yes" id="easeUse" >Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes" id="performance" >Performance</label>
+            <label><input type="checkbox" name="design" value="yes" id="design" >Design</label>
+
+            <label class="title">
+                <h2>Written Review </h2><span class="optional">(Optional) </span>
+                <textarea id="writtenReview" name="writtenReview"></textarea>             
+            </label>
+
+            <label class="title">
+                <h2>First Name </h2><span class="optional">(Optional) </span>
+                <input type="text" name="userName" id="userName">
+            </label>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <div>
+        <p>
+            &copy; <span id="current-year"></span> Helamã Verardo Petri Corrêa, SC/Brazil
+        </p>
+        <p id="last-modified"></p>
+        </div>
+    </footer>
+  </body>
+  <script src="scripts/form.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</html>
+
+
