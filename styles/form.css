@@ -97,6 +97,9 @@ h2 {
 
 .title {
     margin-top: 20px;
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .optional {

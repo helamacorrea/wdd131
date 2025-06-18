@@ -27,10 +27,9 @@ const products = [
 ];
 
 
-const select = document.querySelector('#productId');
-const options = document.querySelector('#options');
+const options = document.querySelector('#productId');
 const submit = document.querySelector('input[type="submit"]');
-let htmlOp = '';
+let htmlOp = '<option value="" disabled selected>Select a Product</option>';
 
 
 products.forEach(product => {
