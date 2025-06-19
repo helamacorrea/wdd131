@@ -172,12 +172,12 @@ footer div {
 }
 
 .numbers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    
 }
 .numbers h1 {
-    grid-column: 1/4;
     text-align: center;
 }
 .numbers h2 {
@@ -189,7 +189,7 @@ footer div {
     border: 1px solid var(--typeface-color);
     border-radius: 30px;
     padding: 1rem;
-    margin: 5%;
+    margin: 2%;
 }
 
 .card p {
@@ -197,27 +197,26 @@ footer div {
 }
 
 .covered-areas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0%;
+    display: flex;
+    flex-direction: column-reverse;
+    
 
 }
 .covered-areas img {
-    grid-column: 2/3;
-    width: 35vw;
-    justify-self: center;
-    max-width: 500px;
     align-self: center;
-    margin-right: 2rem;
+    margin-top: 3rem;
     border-radius: 30px;
+    width: 250px;
 }
 .covered-areas div {
-    padding: 3rem;
     padding-right: 0;
     display: flex;
     flex-direction: column;
     min-width: 250px;
-    padding-left: 18%;
+    padding: 0 2rem;
+    align-items: center;
+    text-align: center;
+    
 }
 .covered-areas h2 {
     margin-bottom: 0;
@@ -229,7 +228,6 @@ footer div {
 .covered-areas button {
     padding: 1rem;
     font-size: 1rem;
-    align-self: flex-start;
     max-width: 200px;
     width: 60%;
 }
@@ -269,7 +267,7 @@ footer div {
 		align-items: center;
 		justify-content: space-between;
         padding: 0 1rem;
-
+        margin-top: 3px;
 	}
     nav div {
         display: flex;
@@ -301,4 +299,55 @@ footer div {
         transform: translate(-50%, -50%);
         z-index: 1;
     }
+    .numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 6%;
+    }
+    .numbers h1 {
+        grid-column: 1/4;
+    }
+    .covered-areas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+    }
+    .covered-areas img {
+        grid-column: 2/3;
+        width: 35vw;
+        justify-self: center;
+        max-width: 400px;
+        align-self: center;
+        margin-right: 2rem;
+        border-radius: 30px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .covered-areas div {
+        padding: 3rem;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        min-width: 250px;
+        padding-left: 18%;
+        text-align: left;
+        align-items: flex-start;
+        
+    }
+    .covered-areas h2 {
+        margin-bottom: 0;
+        font-size: 32px;
+    }
+    .covered-areas p {
+        margin-top: 0;
+    }
+    .covered-areas button {
+        padding: 1rem;
+        font-size: 1rem;
+        align-self: flex-start;
+        max-width: 200px;
+        width: 60%;
+    }
+
+
 }

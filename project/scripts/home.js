@@ -1,3 +1,6 @@
+
+// Home things
+
 const mapCta = document.querySelector('#mapCta');
 const partCta = document.querySelector('#partCta');
 
@@ -9,3 +12,8 @@ mapCta.addEventListener('click', () => {
 partCta.addEventListener('click', () => {
     window.location.href = 'partners.html';
 });
+
+
+
+
+

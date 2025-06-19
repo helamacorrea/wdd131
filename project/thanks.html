@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="stylesheet" href="styles/partners.css">
+    <link rel="stylesheet" href="styles/thanks.css">
   </head>
   <body>
     <header>
@@ -24,15 +25,12 @@
         </nav>
             <button type="button" id="menu"></button>
     </header>
-      <main>
-        <div class="chat-container">
-            <div id="chat-messages"></div>
-            <div class="input-area">
-                <input class="user-input" type="text" id="userInput" name="off" autocomplete="off" placeholder="I want a property like that...">
-                <button type="button" id="sendButton">Send</button>
-            </div>
-        </div>
-      </main>
+    <main>
+      <h2>Thanks for the Application!</h2>
+        <p>
+          Counter: <span id="reviewCounter"></span>
+        </p>
+    </main>
     <footer>
         <div>
         <p>
@@ -41,7 +39,7 @@
         <p id="last-modified"></p>
         </div>
     </footer>
-  <script src="scripts/chat.js" defer></script>
+  <script src="scripts/thanks.js" defer></script>
   <script src="scripts/hambMenu.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
   </body>

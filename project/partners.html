@@ -25,6 +25,31 @@
             <button type="button" id="menu"></button>
     </header>
     <main>
+      <h1>Partnership Application Form</h1>
+        <form method="get" action="thanks.html" class="frm">
+            <fieldset>
+              <legend class="ltitle">Real Estate Agency Info</legend>
+              <label class="title">Agency Name <span class="required"> *</span><input type="text" name="agency-name" id="agencyName" required></label>
+              <label class="title">CNPJ <span class="required"> *</span><input type="text" name="cnpj" id="cnpj" required></label>
+              <label class="title">CRECI <span class="required"> *</span><input type="text" name="creci" id="creci" required></label>
+              <label class="title">City<span class="required"> *</span>
+                <select id="productId" name="product" required>
+                    <option value="" disabled selected>Select your City</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend class="ltitle">Comercial Contact</legend>
+              <label class="title">Phone Number <span class="required"> *</span><input type="text" name="phone" id="tel" required></label>
+              <label class="title">E-mail <span class="required"> *</span><input type="text" name="email" id="email" required></label>
+              <label class="title">Website <span class="optional"> (Opcional)</span><input type="text" name="website" id="Website"></label>
+            </fieldset>
+            <fieldset>
+              <legend class="ltitle">Authorization<span class="required"> *</span></legend>
+              <label><input type="checkbox" name="authorization" value="yes" id="authorization" required>I authorize Landzy to publish my agency’s properties on the platform and contact me to complete the registration. I am aware of the commission-based partnership model.</label>
+            </fieldset>
+          <input type="submit" value="Apply">
+        </form>
     </main>
     <footer>
         <div>
@@ -34,6 +59,7 @@
         <p id="last-modified"></p>
         </div>
     </footer>
+  <script src="scripts/partners.js" defer></script>  
   <script src="scripts/hambMenu.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
   </body>
